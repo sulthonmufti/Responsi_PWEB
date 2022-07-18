@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calculator Sederhana</title>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<style>
+    body{
+        background-image: url(bghome4.jpg);
+    }
+    .navbar {
+        height: 60px;
+        top: 0;
+        margin: 0;
+        display: flex;
+        background-color: #ff8244;
+    }
+    .logo {
+        display: flex;
+        flex: 1;
+        margin-left: 20px;
+        color: #000000;
+    }
+    .menu{
+    flex: 1;
+    margin-right: 20px;
+    }
+    .menu ul{
+        display: flex;
+        list-style: none;
+        float: right;
+    }
+    .menu li{
+        margin-left: 40px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #323232;
+    }
+    h3{
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <p>Tugas Akhir Pemrograman Web </p>
+                <img src="komputer.png" class="logoku">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calender.php">Tanggal</a></li>
+                    <li><a href="inputdata.html">Input data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h3>Kalkulator sederhana : </h3>
+    <div class="container">
+    <table border="1" cellspacing="0">
+        <tr>
+            <td colspan="4" id="inputLabel">0</td>
+        </tr>
+        <tr>
+            <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
+            <td><button onclick="pushBtn(this);">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">7</button></td>
+            <td><button onclick="pushBtn(this);">8</button></td>
+            <td><button onclick="pushBtn(this);">9</button></td>
+            <td><button onclick="pushBtn(this);">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">4</button></td>
+            <td><button onclick="pushBtn(this);">5</button></td>
+            <td><button onclick="pushBtn(this);">6</button></td>
+            <td><button onclick="pushBtn(this);">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">1</button></td>
+            <td><button onclick="pushBtn(this);">2</button></td>
+            <td><button onclick="pushBtn(this);">3</button></td>
+            <td><button onclick="pushBtn(this);">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+            <td><button onclick="pushBtn(this);">.</button></td>
+            <td><button onclick="pushBtn(this);">=</button></td>
+        </tr>
+    </table>
+</div>
+ <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

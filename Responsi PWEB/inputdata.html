@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Guest Book</title>
+	<meta http-equiv="content-type" content="text/html"; charset="iso-8859-1">
+	<style type="text/css">
+		table{
+			margin-left: auto;
+        	margin-right: auto;
+		}
+		body{
+        background-image: url(bghome4.jpg);
+	    }
+	    .navbar {
+	        height: 60px;
+	        top: 0;
+	        margin: 0;
+	        display: flex;
+	        background-color: #ff8244;
+	    }
+	    .logo {
+	        display: flex;
+	        flex: 1;
+	        margin-left: 20px;
+	        color: #000000;
+	    }
+	    .menu{
+	    flex: 1;
+	    margin-right: 20px;
+	    }
+	    .menu ul{
+	        display: flex;
+	        list-style: none;
+	        float: right;
+	    }
+	    .menu li{
+	        margin-left: 40px;
+	    }
+	    .menu a{
+	        text-decoration: none;
+	        color: #323232;
+	    }
+	</style>
+</head>
+<body>
+	<div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <p>Tugas Akhir Pemrograman Web </p>
+                <img src="komputer.png" class="logoku">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="calender.php">Tanggal</a></li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+	<div align="center"><strong><font size="6" face="Courier New, Courier, mono">INPUT DATA</font></strong></div>
+	<div align="center"><strong><font size="1" face="Courier New, Courier, mono"><u>Data diri anda akan tersimpan pada daftar pengunjung</u></font></strong></div><br>
+	<form name="form1" method="post" action="proses.php">
+		<table >
+			<tr>
+				<td><b>Nama Lengkap</b></td>
+				<td><input type="text" name="nama" id="nama"></td>
+			</tr>
+			<tr>
+				<td><b>NIM</b></td>
+				<td><input type="text" name="nim" id="nim"></td>
+			</tr>
+			<tr>
+				<td><b>Kelas</b></td>
+				<td><select name="kelas" id="kelas">
+					<option></option>
+					<option>Kelas A</option>
+					<option>Kelas B</option>
+					<option>Kelas C</option>
+					<option>Kelas D</option>
+					<option>Kelas E</option>
+					<option>Kelas F</option>
+					<option>Kelas G</option>
+					<option>Kelas H</option>
+					<option>Kelas I</option>
+					<option>Kelas J</option>
+					<option>lainnya.</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><b>Semester</b></td>
+				<td><input type="text" name="semester" id="semester"></td>
+			</tr>
+			<tr>
+				<td><b>Komentar</b></td>
+				<td><textarea name="komentar" id="komentar"></textarea></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="submit" value="kirim"><input type="reset" name="submit2" value="batal"></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<div align="center"><strong><a href="data.php">~ Buka Daftar Pengunjung ~</a></strong></div>
+</body>
+</html>
